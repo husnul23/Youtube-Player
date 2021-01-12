@@ -10,7 +10,11 @@ import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
 import com.google.android.youtube.player.YouTubePlayerView
 
-class YoutubeActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener {
+const val YOUTUBE_VIDEO_ID = "VGPvxIrobFE"
+const val YOUTUBE_PLAYLIST = "PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
+
+class YoutubeActivity : YouTubeBaseActivity(),lo YouTubePlayer.OnInitializedListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_youtube)
