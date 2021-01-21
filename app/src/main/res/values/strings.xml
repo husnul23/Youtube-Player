@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Youtube Player</string>
+    <string name="GOOGLE_API_KEY">AIzaSyBHEMM3f0KMyGHn7wzHs4f6_Lf6LxTJueM</string>
 </resources>
