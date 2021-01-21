@@ -10,7 +10,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
 import com.google.android.youtube.player.YouTubePlayerView
 
-const val YOUTUBE_VIDEO_ID = "VGPvxIrobFE"
+const val YOUTUBE_VIDEO_ID = "qEDhQneVjo0"
 const val YOUTUBE_PLAYLIST = "PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6"
 
 class YoutubeActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListener {
@@ -46,7 +46,9 @@ class YoutubeActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedListen
         youTubePlayer?.setPlaybackEventListener(playbackEventListener)
 
         if (!wasRestored) {
-            youTubePlayer?.cueVideo(YOUTUBE_VIDEO_ID)
+            youTubePlayer?.loadVideo(YOUTUBE_VIDEO_ID)
+        } else {
+            youTubePlayer?.play()
         }
     }
 
